@@ -21,7 +21,7 @@ $ npm install
 # Desarrollo
 $ npm run start
 
-# watch mode
+# Este modo hace que los cambios recarguen el proyecto
 $ npm run start:dev
 
 # Produccion
