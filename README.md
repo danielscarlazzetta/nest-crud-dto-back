@@ -40,3 +40,18 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+
+## Creacion de modulo para este proyecto
+
+```bash
+# nest generate module <Nombre de modulo>
+$ nest g mo cars
+```
+
+## Creacion de modulo para este proyecto
+
+```bash
+# nest generate controller <Nombre de controlador>
+$ nest g co cars
+```
