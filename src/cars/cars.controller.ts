@@ -1,12 +1,14 @@
-import { Body, Controller, Delete, Get, Param, ParseIntPipe, Patch, Post } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, ParseIntPipe, ParseUUIDPipe, Patch, Post, UsePipes, ValidationPipe } from '@nestjs/common';
 import { CarsService } from './cars.service';
+import { CreateCardDto } from './DTO/create-card.dto';
 
 @Controller('cars')
+@UsePipes(ValidationPipe)
 export class CarsController {
 
     constructor(
-        private readonly _CarsServices: CarsService){}
-   
+        private readonly _CarsServices: CarsService) { }
+
     @Get()
     getAllCars() {
         return this._CarsServices.findAll();
@@ -14,38 +16,39 @@ export class CarsController {
 
     //Get
     @Get(':id')
-    getCarsById(@Param('id', ParseIntPipe) id : number) {
-        console.log({id})
+    getCarsById(@Param('id', ParseUUIDPipe) id: string) {
+        console.log({ id })
         return this._CarsServices.findOneById(id);
     }
     @Get('brand/:brand')
-    getCarsByBrand(@Param('brand') brand : string) {
-        console.log({brand})
+    getCarsByBrand(@Param('brand') brand: string) {
+        console.log({ brand })
         return this._CarsServices.findOneByBrand(brand);
     }
     @Get('model/:model')
-    getCarsByModel(@Param('model') model : string) {
-        console.log({model})
+    getCarsByModel(@Param('model') model: string) {
+        console.log({ model })
         return this._CarsServices.findOneByModel(model);
     }
 
     //Post
     @Post()
-    createCar(@Body() body : any){
-        return body;
+    createCar(@Body() createCardDto: CreateCardDto) {
+        return createCardDto;
     }
 
     //Patch
     @Patch(':id')
     updateCad(
-        @Param('id', ParseIntPipe) id : number,
-        @Body() body : any){
-        return body;
+        @Param('id', ParseUUIDPipe) id: string,
+        @Body() createCardDto: CreateCardDto) {
+
+        return createCardDto;
     }
 
     //Delete
     @Delete(':id')
-    deleteCad(@Param('id', ParseIntPipe) id : number){
+    deleteCad(@Param('id', ParseUUIDPipe) id: string) {
         return {
             method: 'delete',
             id: id

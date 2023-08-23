@@ -55,3 +55,14 @@ $ nest g mo cars
 # nest generate controller <Nombre de controlador>
 $ nest g co cars
 ```
+
+## Instalaciones necesarias
+
+```bash
+# uuid
+$ npm i --save-dev @types/uuid
+# Validacion para los Pipes
+$ npm install class-validator
+# Transformacion de clases
+$ npm install class-transformer
+```
