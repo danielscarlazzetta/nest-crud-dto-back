@@ -50,9 +50,6 @@ export class CarsController {
     //Delete
     @Delete(':id')
     deleteCad(@Param('id', ParseUUIDPipe) id: string) {
-        return {
-            method: 'delete',
-            id: id
-        }
+        return this._CarsServices.deleteCar(id);
     }
 }
