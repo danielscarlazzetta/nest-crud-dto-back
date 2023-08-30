@@ -1,0 +1,403 @@
+{
+	"info": {
+		"_postman_id": "9f8c234f-359d-472c-9a85-2ac2ebb9bbc3",
+		"name": "Back-NodeJs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17750548"
+	},
+	"item": [
+		{
+			"name": "CARS",
+			"item": [
+				{
+					"name": "GET-ALL-CARS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/cars",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-ID-CARS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/cars/bbf7bfc0-9a0a-4529-97b6-6f6c588811f6",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"bbf7bfc0-9a0a-4529-97b6-6f6c588811f6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-BRAND-CARS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/cars/brand/honda",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"brand",
+								"honda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-MODEL-CARS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/cars/model/asd0",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"model",
+								"asd0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-CARS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "brand",
+									"value": "toiota",
+									"type": "text"
+								},
+								{
+									"key": "model",
+									"value": "caca",
+									"type": "text"
+								},
+								{
+									"key": "asd",
+									"value": "asd",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/cars",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH-CARS",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "brand",
+									"value": "jeep",
+									"type": "text"
+								},
+								{
+									"key": "model",
+									"value": "kaka",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "id",
+									"value": "asdas",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/cars/cb21bfaf-4335-4259-8180-a9e7426eabdb",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"cb21bfaf-4335-4259-8180-a9e7426eabdb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-CARS",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/cars/3309169e-1283-4b0c-b146-f066b0bc5054",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"3309169e-1283-4b0c-b146-f066b0bc5054"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BRANDS",
+			"item": [
+				{
+					"name": "GET-ALL-CARS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/brands/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-ID-CARS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/brands/d43de204-93f1-47d0-b858-d64c1b7f3412",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands",
+								"d43de204-93f1-47d0-b858-d64c1b7f3412"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-BRAND-CARS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/brands/brand/honda",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands",
+								"brand",
+								"honda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-MODEL-CARS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/brands/model/asd0",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands",
+								"model",
+								"asd0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-CARS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "toiota",
+									"type": "text"
+								},
+								{
+									"key": "model",
+									"value": "caca",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "asd",
+									"value": "asd",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/brands?name=aaaa",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "aaaa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH-CARS",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "jeep",
+									"type": "text"
+								},
+								{
+									"key": "model",
+									"value": "kaka",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "id",
+									"value": "asdas",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/brands/57a5e814-05f6-4fa8-a560-3602aa50c03c",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands",
+								"57a5e814-05f6-4fa8-a560-3602aa50c03c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-CARS",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/brands/5dc9b623-70b0-4e95-9a51-1824c8cc28d9",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands",
+								"5dc9b623-70b0-4e95-9a51-1824c8cc28d9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SEED",
+			"item": [
+				{
+					"name": "seed",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/seed",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"seed"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

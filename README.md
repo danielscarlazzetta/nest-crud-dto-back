@@ -66,3 +66,16 @@ $ npm install class-validator
 # Transformacion de clases
 $ npm install class-transformer
 ```
+
+## Ejecucion con postman(endpoint)
+
+```bash
+# primero ejecutar seed
+$ localhost:3000/seed
+```
+
+```bash
+# Luego entrar en la carpeta
+$ ENDPOINMT
+# para ejecutar postman!
+```
